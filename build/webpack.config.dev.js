@@ -9,6 +9,12 @@ module.exports = {
     entry: [
         './src/index.ts',
     ],
+    resolve: {
+        alias: {
+            vue$: 'vue/dist/vue.esm.js'
+        },
+        extensions: ['.ts', '.tsx', '.js']
+    },
     devServer: {
         hot: true,
         watchOptions: {
